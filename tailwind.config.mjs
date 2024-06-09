@@ -7,9 +7,15 @@ export default {
         "neuropol-rg": ["NeuropolRg", "sans-serif"],
         "neuropol-x-rg": ["NeuropolXRg", "sans-serif"],
 
-        "inter": ["Inter regular", "sans-serif"],
+        inter: ["Inter regular", "sans-serif"],
         "inter-bold": ["Inter bold", "sans-serif"],
         "inter-light": ["Inter light", "sans-serif"],
+      },
+
+      colors: {
+        white: "#FBFCF2",
+        lime: "#89FC21",
+        blue: "#4080FB",
       },
     },
   },

@@ -3,7 +3,16 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
+  <main class="main-container bg-blue h-[100vh] blur-sm">
     <p class="text-2xl">Hola</p>
   </main>
 </Layout>
+
+<style>
+  .main-container {
+    background-image: url("/images/background/background-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
