@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: "Inter regular";
+    src: url(/fonts/inter/static/Inter-Regular.ttf) format(woff2);
+  }
+
+  @font-face {
+    font-family: "Inter bold";
+    src: url(/fonts/inter/static/Inter-Bold.ttf) format(woff2);
+  }
+
+  @font-face {
+    font-family: "Inter light";
+    src: url(/fonts/inter/static/Inter-Light.ttf) format(woff2);
+  }
+
+  @font-face {
+    font-family: "NeuropolRg";
+    src: url(/fonts/neuropolitical/neuropolitical-rg.otf) format(woff2);
+  }
+
+  @font-face {
+    font-family: "NeuropolXRg";
+    src: url(/fonts/neuropol-x-free/neuropol-x-rg.otf) format(woff2);
+  }
+
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family:
+      Inter regular,
+      system-ui,
+      sans-serif;
+  }
+</style>
