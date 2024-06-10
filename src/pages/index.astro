@@ -1,18 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.astro";
+import Footer from "../components/Footer/Footer.astro";
+import Hero from "../components/Home/Hero/Hero.astro";
+import OurProducts from "../components/Home/OurProducts/OurProducts.astro";
+import OurNewReleases from "../components/Home/OurNewReleases/OurNewReleases.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main class="main-container bg-blue h-[100vh] blur-sm">
-    <p class="text-2xl">Hola</p>
-  </main>
-</Layout>
+<Layout title="Atomic">
+  <div
+    class="min-h-[100dvh] bg-gradient-to-r from-[#6B5AED] to-[#FF6B6B] flex flex-col"
+  >
+    <Header />
 
-<style>
-  .main-container {
-    background-image: url("/images/background/background-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-</style>
+    <main class="flex-1 space-y-12">
+      <Hero />
+      <OurProducts />
+      <!-- <OurNewReleases /> -->
+    </main>
+
+    <!-- <Footer /> -->
+  </div>
+</Layout>
