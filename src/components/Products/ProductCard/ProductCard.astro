@@ -1,10 +1,21 @@
+---
+interface Props {
+  src: string;
+  name: string;
+  description: string;
+  price: string;
+}
+
+const { src, name, description, price } = Astro.props;
+---
+
 <article
   class="group rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2"
 >
   <a href="#">
     <picture>
       <img
-        src="/images/images/person-3.jpg"
+        src={src}
         alt="A futuristic product from atom"
         width="500"
         height="400"
@@ -13,9 +24,9 @@
     </picture>
 
     <div class="p-4 space-y-2">
-      <h3 class="text-purple font-inter-bold text-xl">Futuristic Coat</h3>
-      <p class="text-gray">Futuristic design with an integrated tech</p>
-      <p class="text-gray text-end font-inter-bold">300.00€</p>
+      <h3 class="text-purple font-inter-bold text-xl">{name}</h3>
+      <p class="text-gray">{description}</p>
+      <p class="text-gray text-end font-inter-bold">{price}</p>
     </div>
   </a>
 </article>
