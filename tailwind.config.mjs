@@ -14,8 +14,10 @@ export default {
 
       colors: {
         white: "#FBFCF2",
+        gray: "#6B7484",
         lime: "#89FC21",
         blue: "#4080FB",
+        purple: "#6B5AED",
       },
     },
   },

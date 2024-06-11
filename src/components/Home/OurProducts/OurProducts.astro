@@ -1,1 +1,26 @@
-<section>OurProducts</section>
+---
+import ProductCard from "../../Products/ProductCard/ProductCard.astro";
+---
+
+<section class="w-full p-4 bg-white">
+  <div class="text-center">
+    <h2
+      class="text-purple font-neuropol-rg text-3xl lg:text-4xl xl:text-5xl mb-2"
+    >
+      Know our products
+    </h2>
+    <p class="lg:text-lg xl:text-xl text-gray">
+      Discover our collection of futuristic garments that combine design,
+      technology and comfort.
+    </p>
+  </div>
+
+  <div
+    class="mx-auto grid gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3 my-10"
+  >
+    <ProductCard />
+    <ProductCard />
+    <ProductCard />
+    <ProductCard />
+  </div>
+</section>
