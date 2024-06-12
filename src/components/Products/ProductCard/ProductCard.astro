@@ -1,18 +1,19 @@
 ---
 interface Props {
+  href: string;
   src: string;
   name: string;
   description: string;
   price: string;
 }
 
-const { src, name, description, price } = Astro.props;
+const { href, src, name, description, price } = Astro.props;
 ---
 
 <article
   class="group rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2"
 >
-  <a href="#">
+  <a href={href}>
     <picture>
       <img
         src={src}

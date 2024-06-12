@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer.astro";
 import Hero from "../components/Home/Hero/Hero.astro";
 import OurProducts from "../components/Home/OurProducts/OurProducts.astro";
 import OurNewReleases from "../components/Home/OurNewReleases/OurNewReleases.astro";
+import AboutUsHome from "../components/Home/AboutUsHome/AboutUsHome.astro";
 ---
 
 <Layout title="Atomic">
@@ -13,10 +14,11 @@ import OurNewReleases from "../components/Home/OurNewReleases/OurNewReleases.ast
   >
     <Header />
 
-    <main class="flex-1 space-y-12">
+    <main class="flex-1">
       <Hero />
       <OurProducts />
-      <!-- <OurNewReleases /> -->
+      <OurNewReleases />
+      <!-- <AboutUsHome /> -->
     </main>
 
     <!-- <Footer /> -->

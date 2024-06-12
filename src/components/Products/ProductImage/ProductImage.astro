@@ -1,0 +1,31 @@
+---
+interface Props {
+  href: string;
+  src: string;
+  category: string;
+}
+
+const { src, href, category } = Astro.props;
+---
+
+<article class="group relative overflow-hidden rounded-lg">
+  <a href={href}>
+    <picture>
+      <img
+        src={src}
+        alt="A futuristic product from atom"
+        width="500"
+        height="500"
+        class="object-cover w-full h-80 rounded-lg"
+      />
+    </picture>
+    <div
+      class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 flex items-center justify-center transition duration-300 ease-in-out"
+    >
+      <span
+        class="text-white text-2xl opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out font-neuropol-rg"
+        >{category}</span
+      >
+    </div>
+  </a>
+</article>

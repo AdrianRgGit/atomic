@@ -1,1 +1,21 @@
-<section>OurNewRealeases</section>
+---
+import ProductImage from "../../Products/ProductImage/ProductImage.astro";
+---
+
+<section class="p-4">
+  <div class="text-center">
+    <h2 class="font-neuropol-rg text-3xl lg:text-4xl xl:text-5xl mb-2">
+      Discover our new releases
+    </h2>
+    <p>Keep up to date with the latest trends and technologies in fashion.</p>
+  </div>
+
+  <div
+    class="mx-auto grid gap-8 sm:max-w-3xl sm:grid-cols-2 md:gap-12 lg:max-w-4xl my-10"
+  >
+    <ProductImage href="#" src="/images/images/person-5.jpg" category="Clothes"/>
+    <ProductImage href="#" src="/images/images/person-5.jpg" category="Shoes"/>
+    <ProductImage href="#" src="/images/images/person-5.jpg" category="Accessories"/>
+    <ProductImage href="#" src="/images/images/person-5.jpg" category="Misc"/>
+  </div>
+</section>
